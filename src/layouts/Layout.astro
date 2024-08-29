@@ -1,4 +1,6 @@
 ---
+import Footer from '../components/Footer.astro';
+
 interface Props {
 	title: string;
 }
@@ -16,28 +18,18 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="min-h-screen w-[100vw] flex justify-center items-center">
-			<div class="w-[100vw] min-h-screen bg-gray-400 rounded-xl bg-opacity-30 backdrop-filter backdrop-blur-lg">
+	<body class="min-h-screen w-full flex justify-center items-center">
+			<div class="w-full min-h-screen bg-gray-400 rounded-xl bg-opacity-30 backdrop-filter backdrop-blur-lg">
 				
 				<div class="w-full lg:w-[1080px] mx-auto">
 					<slot />
 				</div>
+				<Footer/>
 				
 			</div>
 	</body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
 	html {
 		font-family: system-ui, sans-serif;
 	}
