@@ -51,7 +51,7 @@ const faqs = [
 
 const FAQSection = () => {
     return (
-        <div className="faq-section p-8 bg-white shadow-lg rounded-lg  text-black bg-opacity-20 backdrop-filter
+        <div className="faq-section p-8 bg-white shadow-lg rounded-none lg:rounded-lg  text-black bg-opacity-20 backdrop-filter
         backdrop-blur-lg mb-20">
             <h2 className="text-2xl font-bold mb-6">FAQ</h2>
             <div>
