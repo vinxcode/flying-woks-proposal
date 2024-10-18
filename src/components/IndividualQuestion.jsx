@@ -26,7 +26,7 @@ const IndividualQuestion = ({ question, answer }) => {
           isOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <p className="mt-2 text-gray-600">
+        <p className="mt-2 text-gray-800">
           {answer}
         </p>
       </div>
