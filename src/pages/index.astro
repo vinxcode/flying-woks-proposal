@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Dishes from "../components/Dishes.astro"
 import Nav from "../components/Nav.astro";
 import Hero from "../components/Hero.astro"
+import FAQ from '../components/FAQ'
 ---
 
 <Layout title="Thai Woks - Asian Flavor in Melbourne">
@@ -10,5 +11,6 @@ import Hero from "../components/Hero.astro"
 		<Nav/>
 		<Hero/>
 		<Dishes/>
+		<FAQ client:load/>
 	</main>
 </Layout>
