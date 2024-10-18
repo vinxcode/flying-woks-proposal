@@ -4,7 +4,7 @@ import Dish from "./Dish.astro"
 const dishes = [
     {
         title: "Chicken Teriyaki",
-        body: "Tender chicken strips marinated in ginger, onion, mirin & soy sauce, served with vibrant green vegetables and perfectly steamed rice.",
+        body: "Tender chicken strips marinated in ginger, onion, mirin & soy sauce, served with vibrant green vegetables.",
         href: "./dish.png"
     },
     {
@@ -22,9 +22,9 @@ const dishes = [
 
 ---
 
-<section class="flex flex-col gap-5 mb-20 px-20">
+<section class="flex flex-col gap-5 mb-20 p-7 xl:px-20">
     <h1 class="text-3xl font-bold text-pink-300 mb-10">Explore our culinary delights</h1>
-    <div class="flex gap-7">
+    <div class="flex flex-col xl:flex-row gap-14 xl:gap-7 items-center">
         {
             dishes.map(dish=> (
                 <Dish title={dish.title} body={dish.body} href={dish.href} />
